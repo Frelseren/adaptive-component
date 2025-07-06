@@ -12,7 +12,7 @@ const columns = [
     { label: 'CloseAt', fieldName: 'closeAt', type: 'date' },
 ];
 
-export default class FdsDatatable extends AdaptiveComponent(LightningElement, {
+export default class Datatable extends AdaptiveComponent(LightningElement, {
   templates: {
     mobile,
     desktop
@@ -21,10 +21,6 @@ export default class FdsDatatable extends AdaptiveComponent(LightningElement, {
 }) {
   data = [];
   columns = columns;
-
-  constructor() {
-    super();
-  }
 
   connectedCallback() {
       super.connectedCallback(); // Call the parent class's connectedCallback method to prevent overriding its functionality

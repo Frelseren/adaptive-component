@@ -1,10 +1,10 @@
-# Adapritve Component
+# Adaptive Component
 
 High-order utility function to extend the Lightning Web Component to support adaptive design.
 
-The new class listens for the media query changes and renders either given desktop and mobile template.
+The new class listens for media query changes and renders either the given desktop or mobile template.
 
-The options object supports dekstop and mobile HTML templates and a media query to match.
+The options object supports both desktop and mobile HTML templates, as well as a media query to match.
 
 By default, the desktop media query is `min-width: 600px;`.
 
