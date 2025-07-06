@@ -1,0 +1,24 @@
+<template>
+  <lightning-layout pull-to-boundary="small" multiple-rows>
+    <template for:each={data} for:item="row">
+      <lightning-layout-item key={row.name} size="12" padding="around-small">
+        <lightning-card variant="Narrow" title={row.name} icon-name="standard:account">
+          <ul class="slds-var-p-horizontal_small">
+            <li>
+              <lightning-formatted-url value={row.website} target="_blank"></lightning-formatted-url>
+            </li>
+            <li>
+              <lightning-formatted-number value={row.amount} format-style="currency" currency-code="EUR"></lightning-formatted-number>
+            </li>
+            <li>
+              <lightning-formatted-phone value={row.phone}></lightning-formatted-phone>
+            </li>
+            <li>
+              <lightning-formatted-date-time value={row.closeAt}></lightning-formatted-date-time>
+            </li>
+          </ul>
+        </lightning-card>
+      </lightning-layout-item>
+    </template>
+  </lightning-layout>
+</template>
